@@ -1,1 +1,361 @@
-/* You can add global styles to this file, and also import other style files */
+//Font Awesome
+@import 'https://use.fontawesome.com/releases/v5.3.1/css/all.css';
+
+@import './variables.scss';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+* {
+	box-sizing: border-box;
+}
+
+/*
+    * Typography
+*/
+
+.site-title {
+    font-size: 2em;;
+}
+
+.sub-title {
+    color: $brand-grey;
+}
+
+/*
+    * Body
+*/
+
+body {
+    background-color: $body-color;
+    color: $main-font-color;
+
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.body-text-center {
+    text-align: center;
+}
+
+.child-body-left {
+    display: inline-block;
+    text-align: left;
+}
+
+
+
+/*
+    * Containers
+*/
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.body-container {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.body-content {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.body-markdown {
+    max-width: 100%;
+}
+
+.c-eighty {
+    width:80%;
+    margin: auto;
+}
+
+/*
+    * Flex
+*/
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+}
+
+.flex-column {
+    flex-direction: column; 
+}
+
+.flex-item {
+   // flex: 1;
+}
+
+.flex-center-content {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center-y {
+    display: flex;
+    align-items: center;
+}
+
+.flex-center-y-bl {
+    display: flex;
+    align-items: baseline;
+}
+
+.flex-even {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-outer {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.flex-inner,
+.flex-outer > div {
+    flex: 1;
+}
+
+
+
+
+
+/*
+    * Lists
+*/
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 0.25em;
+}
+
+li:nth-child(2n + 2) {
+    color: $brand-pink
+}
+
+li:nth-child(2n + 1) {
+    color: $brand-grey
+}
+
+.list-no-padding {
+    padding-left: 0;
+}
+
+/*
+    * Buttons
+*/
+
+button {
+    
+    
+    padding: 1em 2em;
+    background-color: $brand-pink;
+    color: $main-font-color;
+    border: $brand-pink;
+    border-radius: 5px;
+    
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $brand-pink-hover;
+}
+
+.btn-danger {
+    background-color: $brand-danger;
+}
+
+.btn-danger:hover {
+    background-color: $brand-danger-hover;
+}
+
+.btn-secondary {
+    background-color: $brand-grey;
+}
+
+.btn-secondary:hover {
+    background: $brand-grey-light;
+}
+
+/*
+    * Links
+*/
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+a:visited {
+	color: unset;
+}
+
+/*
+    * Header
+*/
+
+.header-float {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+
+/*
+    * Base Styles
+*/
+
+/*
+    * Loading
+*/
+
+mat-progress-bar {
+	max-height: 2px;
+	z-index: 2001;
+}
+
+.loading-overlay,
+.success-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.loading-overlay mat-spinner,
+.success-overlay i {
+	position: absolute;
+	top: calc(50% - 50px);
+	left: calc(50% - 50px);
+}
+
+.success-overlay i {
+	font-size: 100px;
+	color: green;
+	text-shadow: darkgreen;
+}
+
+/*
+    * Margins
+*/
+
+.m-tb-2em {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.m-top-1em {
+    margin-top: 1em;
+}
+
+.m-top-2em {
+    margin-top: 2em;
+}
+
+.m-r-1em {
+    margin-right: 1em;
+}
+
+.m-r-2em {
+    margin-right: 2em;
+}
+
+.center-text {
+    text-align:center;
+}
+
+.padding-a-sm {
+    padding: 1em;
+}
+
+.m-top-btm-1em {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.m-top-2em {
+    margin-top: 2em;
+}
+
+.f-right {
+    float: right;
+}
+
+.fifty-percent-w {
+    width: 50%;
+}
+
+/*
+    * Angular Material overrides
+*/
+
+mat-divider {
+    margin-top: 3em !important;
+    margin-bottom: 3em !important;
+}
+
+
+
+
+
+//Table
+
+table {
+    width: 100%;
+    box-shadow: none !important;
+}
+
+.mat-row:hover {
+	cursor: pointer;
+	background-color: #EC407A;
+}
+
+/*
+    *   Modal
+*/
+
+.modal-container {
+    padding: 0 2em 1em 2em;
+}
+
+
+table i {
+    cursor: pointer;
+}
+
+/*
+    * Icons
+*/
+
+.close-button {
+    cursor: pointer;
+}

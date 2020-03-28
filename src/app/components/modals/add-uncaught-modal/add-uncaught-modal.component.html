@@ -1,0 +1,68 @@
+<div class="flex-container flex-right">
+    <i class="fas fa-times close-button" (click)="dialogRef.close()"></i>
+</div>
+
+
+<div class="flex-container">
+    <h3 class="flex-inner center-text">Add a pokemon!</h3>
+</div>
+
+<div class="modal-container">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+        <div class="modal-body flex-container flex-column">
+
+            <mat-form-field appearance="outline" color="accent">
+                <mat-label>Dex #</mat-label>
+                <input matInput formControlName="dexNumber" required>
+                <mat-error class="error-list" *ngIf="validateField('dexNumber')">
+                    <mat-error *ngIf="check('dexNumber', 'required')">
+                        Dex # required
+                    </mat-error>
+                </mat-error> 
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" required>
+            <mat-error class="error-list" *ngIf="validateField('name')">
+                <mat-error *ngIf="check('name', 'required')">
+                    Name required
+                </mat-error>
+            </mat-error> 
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Area</mat-label>
+                <textarea matInput formControlName="area" required>
+                </textarea>
+                <mat-error class="error-list" *ngIf="validateField('area')">
+                    <mat-error *ngIf="check('area', 'required')">
+                        Area required
+                    </mat-error>
+                </mat-error> 
+            </mat-form-field>
+
+            <label>Sprite</label>
+            <cl-image
+                *ngIf="pkmn && pkmn.sprite"
+                public-id="{{pkmn.sprite}}"
+                class="thumbnail-image"
+                height="45"
+                width="45">
+                <cl-transformation height="45" width="45" crop="thumb" quality="75"></cl-transformation>
+            </cl-image>
+
+            <input class='img-upload' type="file"
+                id="file-upload"
+                accept="image/*"
+                (change)="uploadImg($event)">
+        </div>
+
+            
+        <div class="modal-footer flex-container flex-center m-top-1em">
+            <button class="btn-secondary m-r-1em" (click)="dialogRef.close()" type="button">Cancel</button>
+            <button class="button-primary" type="submit">Submit</button>
+        </div>
+    </form>
+</div>

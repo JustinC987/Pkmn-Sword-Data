@@ -1,0 +1,57 @@
+@import '../../../variables.scss';
+
+header {
+	color: #fafafa;
+	background-color: $brand-primary;
+}
+
+.header-main {
+    box-shadow: $box-shadow;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.header-title-img {
+    margin-right: 1em;
+    width: 30px;
+}
+
+.site-title {
+    display: inline-block;
+}
+
+.header-inner {
+	flex: 1 1 auto;
+}
+
+header a {
+	text-decoration: none;
+}
+
+.brand p {
+	font-size: 1.5rem;
+	margin: 1.1rem 0;
+}
+
+nav {
+	position: relative;
+	text-align: right;
+}
+
+nav > a,
+nav .nav-link {
+	margin-left: 2em;
+	cursor: pointer;
+}
+
+.sub-header {
+    height: 75px;
+}
+
+.page-name-title {
+
+}

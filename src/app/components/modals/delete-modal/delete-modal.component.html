@@ -1,0 +1,29 @@
+
+
+<div class="flex-container flex-right">
+    <i class="fas fa-times close-button" (click)="dialogRef.close()"></i>
+</div>
+    
+<div class="modal-container">
+    <form class="delete-form" [formGroup]="deleteForm" (ngSubmit)="onSubmit()">
+        <div class="modal-body">
+
+                <span class="m-r-1em">Are you sure?</span>
+                <mat-slide-toggle color="warn" formControlName="delete">
+                </mat-slide-toggle>
+
+                <mat-error class="error-list" *ngIf="validateField('delete')">
+                    <mat-error *ngIf="check('delete', 'required')">
+                        Area required
+                    </mat-error>
+                </mat-error> 
+
+        </div>
+                
+        <div class="modal-footer flex-container flex-center m-top-1em">
+            <button class="btn-secondary m-r-1em" (click)="dialogRef.close()" type="button">Cancel</button>
+            <button class="button-primary" type="submit">Delete</button>
+        </div>
+    </form>
+</div>
+    

@@ -1,0 +1,130 @@
+{
+  "uncaughtPokemon": [
+    {
+      "dexNumber": "212",
+      "name": "Spritzee",
+      "area": "Trade fro Shield. trade with sachet.",
+      "sprite": "jojibcecdfhbqc5yxtrs",
+      "id": 40
+    },
+    {
+      "dexNumber": "216",
+      "name": "Wynaut",
+      "area": "Max Raid Battles: Hammerlocke Hills: common",
+      "sprite": "onkufpngm1dmkh5tuohy",
+      "id": 42
+    },
+    {
+      "dexNumber": "260",
+      "name": "Munchlax",
+      "area": "Max Raid Battles: Bridge Field, Motostoke Riverbank, Stony Wilderness",
+      "sprite": "tbgcko0kct4s71nzmpep",
+      "id": 54
+    },
+    {
+      "dexNumber": "294",
+      "name": "Sabeleye",
+      "area": "Dusty Bowl\nMax Raid Battles: Giant's Mirror, South Lake Miloch, Stony Wilderness, Watchtower Ruins, West Lake Axewell",
+      "sprite": "zb8hnu7v8ft7drk6al0e",
+      "id": 60
+    },
+    {
+      "dexNumber": "301",
+      "name": "Mimikyu",
+      "area": "Bridge Field, Giant's Mirror\nMax Raid Battles: Hammerlocke Hills, Rolling Fields",
+      "sprite": "xvosyxnk0erlp2dw6xc8",
+      "id": 63
+    },
+    {
+      "dexNumber": "368",
+      "name": "Darmanitan",
+      "area": "Evolve",
+      "sprite": "h8s9fs6gyey7m2el0kjv",
+      "id": 80
+    },
+    {
+      "dexNumber": "369",
+      "name": "Stonjourner",
+      "area": "Route 10, Lake of Outrage\nMax Raid Battles: Giant's Seat, Rolling Fields, Stony Wilderness",
+      "sprite": "uwsccuqnhiccqgzusser",
+      "id": 81
+    },
+    {
+      "dexNumber": "370",
+      "name": "Eiscue",
+      "area": "Trade from Shield.  rt 10.",
+      "sprite": "zkzetnufiw1lktrugkd8",
+      "id": 82
+    },
+    {
+      "dexNumber": "371",
+      "name": "Duraludon",
+      "area": "Route 10, Giant's Seat, Lake of Outrage\nMax Raid Battles: Dusty Bowl, Giant's Seat, Stony Wilderness,\nGigantamax Raid Battles: Giant's Seat",
+      "sprite": "pbadxlcqf214pncgi4ro",
+      "id": 83
+    },
+    {
+      "dexNumber": "375",
+      "name": "Dracozolt",
+      "area": "Bird + Drake",
+      "sprite": "xbqwlgy7sozt8dmmyxpe",
+      "id": 85
+    },
+    {
+      "dexNumber": "376",
+      "name": "Arctozolt",
+      "area": "Bird + dino",
+      "sprite": "tnczvr1l2vner4saabun",
+      "id": 86
+    },
+    {
+      "dexNumber": "377",
+      "name": "Arctovish",
+      "area": "Fish + dino",
+      "sprite": "ptwudcedvu6oxqkcwpyf",
+      "id": 87
+    },
+    {
+      "dexNumber": "376",
+      "name": "Dracovish",
+      "area": "Fish + drake",
+      "sprite": "stsx57tielqbkwrhajmq",
+      "id": 88
+    },
+    {
+      "dexNumber": "380",
+      "name": "Charizard",
+      "area": "Gift after beating game",
+      "sprite": "quuaujvaz2lsz2socdsx",
+      "id": 89
+    },
+    {
+      "dexNumber": "388",
+      "name": "Hydreigon",
+      "area": "Max Raid Battles: Bridge Field, Dusty Bowl, Giant's Mirror, Stony Wilderness, West Lake Axewell",
+      "sprite": "fkn3f0hgtgndxn6vo9h2",
+      "id": 92
+    },
+    {
+      "dexNumber": "399",
+      "name": "Zamazenta",
+      "area": "Trade from sheild",
+      "sprite": "pesrhbz5mprgcfmmdx0t",
+      "id": 95
+    },
+    {
+      "dexNumber": "381",
+      "name": "Null",
+      "area": "Gift at battle tower",
+      "sprite": "qbb3nrkoe4yiupcdy3ra",
+      "id": 96
+    },
+    {
+      "dexNumber": "33",
+      "name": "Carlton",
+      "area": "Philadelphia ",
+      "sprite": "vktw6jic3ujl6wymfhzp",
+      "id": 97
+    }
+  ]
+}

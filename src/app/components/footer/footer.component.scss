@@ -1,0 +1,48 @@
+@import '../../../variables.scss';
+
+
+footer{
+	margin-top: 5em;
+    // position:fixed;
+    bottom:0px;
+    background-color: $brand-primary;
+    width:100%;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.footer-right > a {
+    padding-right: 1em;
+}
+
+.brand {
+	padding: 1rem 0;
+	font-size: 1.73rem;
+	text-decoration: none;
+}
+
+.upArrowBtn {
+	position: absolute;
+
+	top: 0;
+	right: 0;
+	height: 100%;
+
+	padding: 1.6rem;
+	text-align: center;
+
+	border: none;
+
+	transition: background-color 0.2s;
+	cursor: pointer;
+}

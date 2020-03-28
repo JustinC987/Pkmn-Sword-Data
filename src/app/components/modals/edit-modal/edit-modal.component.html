@@ -1,0 +1,52 @@
+<div class="flex-container flex-right">
+    <i class="fas fa-times close-button" (click)="dialogRef.close()"></i>
+</div>
+
+
+<div class="flex-container">
+    <h3 class="flex-inner center-text">Updating {{data.name}}</h3>
+</div>
+
+<div class="modal-container">
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+
+        <div class="modal-body flex-container flex-column">
+
+            <mat-form-field appearance="outline" color="accent">
+                <mat-label>Dex #</mat-label>
+                <input matInput formControlName="dexNumber" required>
+                <mat-error class="error-list" *ngIf="validateField('dexNumber')">
+                    <mat-error *ngIf="check('dexNumber', 'required')">
+                        Dex # required
+                    </mat-error>
+                </mat-error> 
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" required>
+            <mat-error class="error-list" *ngIf="validateField('name')">
+                <mat-error *ngIf="check('name', 'required')">
+                    Name required
+                </mat-error>
+            </mat-error> 
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Area</mat-label>
+                <input matInput formControlName="area" required>
+                <mat-error class="error-list" *ngIf="validateField('area')">
+                    <mat-error *ngIf="check('area', 'required')">
+                        Area required
+                    </mat-error>
+                </mat-error> 
+            </mat-form-field>
+        </div>
+
+            
+        <div class="modal-footer flex-container flex-center m-top-1em">
+            <button class="btn-secondary m-r-1em" (click)="dialogRef.close()" type="button">Cancel</button>
+            <button class="button-primary" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
